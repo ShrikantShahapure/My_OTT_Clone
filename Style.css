@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: roboto;
+}
+
+.navbar {
+    width: 100%;
+    height: 80px;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    height: 100%;
+    color: white;
+    background-color: #101019  ;
+}
+
+.logo-container {
+    flex: 1;
+    
+}
+
+.menu-container {
+    flex: 6;
+    align-items: center;
+   
+}
+
+.menu-list {
+    display: flex;
+    list-style: none;
+    
+}
+
+input {
+    height: 20px;
+    border: none;
+    outline: none;
+    border-radius: 1px;
+}
+ 
+.menu-list-item {
+    margin-right: 30px;
+    font-weight: 400;
+}
+
+
+.profile-container {
+    flex: 2; 
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.profile-picture {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-text-container {
+    margin: 0 20px;
+}
+
+.logo {
+     width: 155px; 
+
+     
+}
+
+.toggle {
+    width: 40px;
+    height: 20px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.toggle-icon {
+    color: blue;
+}
+
+.toggle-ball {
+    height: 18px;
+    width: 18px;
+    background-color: black;
+    position: absolute;
+    right: 1px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.sidebar {
+    width: 50px;
+    height: 100%;
+    position: fixed;
+    background-color: black;
+    top: 0%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 90px;
+    align-items: center;
+    gap: 60px;
+}
+
+.left-menu-icon {
+    color: white;
+    font-size: 18px;
+}
+
+input{
+    border-radius: 20px;
+}
+
+.container {
+    background-color: #151515;
+    min-height: calc(100vh - 50px);
+    color: white;
+}
+
+.content-container {
+    margin-left: 50px;
+}
+.featured-movie {
+    height: 50vh;
+    padding: 50PX;
+   
+}
+
+.featured-title {
+    width: 200px;
+}
+
+.featured-descrip {
+    width: 500PX;
+    color: lightgrey;
+    margin: 30PX 0;
+    font-size: 1.2em;
+}
+
+.featured-btn {
+    background-color: rgb(240, 34, 27);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+} 
+
+.movie-list-container {
+    padding: 0 10px;
+}
+
+.movie-list {
+    display: flex;
+    align-items: center;
+    height: 300px;
+}
+
+.movie-list-item {
+    margin-right: 30px;
+    position: relative;
+}
+
+.movie-list-wrapper {
+
+    position: relative;
+}
+
+.movie-list-item:hover .movie-list-item-img {
+    transform: scale(1.2);
+    margin: 0 30px;
+    opacity: 0.5;
+}
+
+
+.movie-list-item-img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    transition: all 0.5s ease-in-out;
+}
+
+.search-bar input {
+    margin-left: 500px;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    position: relative;
+   
+}
+
+.movie-list-item:hover .movie-list-item-title,
+.movie-list-item:hover .movie-list-item-descrip,
+.movie-list-item:hover .movie-list-item-button {
+    opacity: 1;
+}
+
+
+
+.movie-list-item-title {
+    background-color: #333;
+    padding: 0 10px;
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.movie-list-item-descrip{
+    background-color: #333;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    width: 200px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+   
+} 
+.movie-list-item-button {
+    color: white;
+    padding: 10px;
+    background-color: rgb(159, 159, 255);
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+    bottom: 10px;
+    left: 38px;
+    opacity: 0;
+}
+
+.arrow {
+    font-size: 120px;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    color: lightgray;
+    cursor: pointer;
+} 
